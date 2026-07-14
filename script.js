@@ -298,3 +298,31 @@ if (footerYear) {
         new Date().getFullYear();
 
 }
+
+/*============ COPY EMAIL ============*/
+
+const copyEmail = document.getElementById("copyEmail");
+
+if (copyEmail) {
+
+    copyEmail.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        navigator.clipboard.writeText("viswalini22@gmail.com");
+
+        const original = this.innerHTML;
+
+        this.innerHTML =
+            '<i class="fas fa-check"></i> <span>Email Copied!</span>';
+
+        setTimeout(() => {
+
+            this.innerHTML = original;
+
+        }, 2000);
+
+    });
+
+}
+
