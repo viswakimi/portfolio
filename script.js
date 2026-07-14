@@ -27,10 +27,7 @@ window.addEventListener("load", () => {
 
 const roles = [
     "Data Analyst",
-    "Python Developer",
-    "Power BI Developer",
-    "Machine Learning Enthusiast",
-    "Oracle Fusion Consultant"
+    
 ];
 
 let roleIndex = 0;
